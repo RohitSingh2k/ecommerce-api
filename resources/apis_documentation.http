@@ -1,0 +1,45 @@
+@HOSTNAME = http://localhost
+@PORT = 5000
+@BASE_URL = {{ HOSTNAME }}:{{ PORT }}
+@AUTH_ROUTE = {{ BASE_URL }}/api/auth
+@USERS_ROUTE = {{ BASE_URL }}/api/users
+@PRODUCTS_ROUTE = {{ BASE_URL }}/api/products
+@CARTS_ROUTE = {{ BASE_URL }}/api/carts
+@ORDERS_ROUTE = {{ BASE_URL }}/api/orders
+@PAYMENT_ROUTE = {{ BASE_URL }}/api/checkout
+
+
+###
+
+# @name REGISTER
+POST {{AUTH_ROUTE}}/register
+Accept : */*
+Content-Type : application/json
+
+{
+    "username" : "something101",
+    "email" : "something@gmail.com",
+    "password" : "something101"
+}
+
+###
+
+# @name LOGIN
+POST {{AUTH_ROUTE}}/login
+Accept : */*
+Content-Type : application/json
+
+{
+    "username" : "something101",
+    "password" : "something101"
+}
+
+###
+
+# @name GET_ALL_USERS
+
+GET {{USERS_ROUTE}}
+Accept : */*
+Content-Type : application/json
+Authorization: 
+
