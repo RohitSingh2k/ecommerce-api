@@ -6,38 +6,38 @@ This is an API for ecommerce website selling products. It is build on top of `Ex
 
 To use this project follow these steps : 👇
 
-- ### Clone this github repository.
+- Clone this github repository.
     ```bash
     git clone https://github.com/RohitSingh2k/ecommerce-api.git
     ```
-- ### Change directory to ecommerce-api.
+- Change directory to ecommerce-api.
     ```bash
     cd ecommerce-api
     ```
-- ### Add an `.env` file into this folder and add the details provided 👇.
+- Add an `.env` file into this folder and add the details provided 👇.
     ```bash
     MONGO_URL=<add your mongodb uri here>
     PASS_SEC=<add any string here as a password security key without double qoutes(")>
     JWT_SEC=<add any string here without double qoutes(")>
     ```
-- ### Check for `npm` and `node` installation in your syatem.
+- Check for `npm` and `node` installation in your syatem.
     ```bash
     node -v
     npm -v
     ```
-- ### Install `yarn` package manager.
+- Install `yarn` package manager.
     ```bash
     npm i -g yarn
     ```
-- ### Install the required dependencies of the project.
+- Install the required dependencies of the project.
     ```bash
     yarn install
     ```
-- ### To start server use the commad 👇.
+- To start server use the commad 👇.
     ```bash
     yarn start
     ```
-- ### Wait for the DB connection.
+- Wait for the DB connection.
 ``` 
     yarn run v1.22.17
     $ nodemon index.js
