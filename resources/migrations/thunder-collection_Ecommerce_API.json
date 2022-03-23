@@ -1,0 +1,607 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Ecommerce_API",
+  "dateExported": "2022-03-23T07:38:46.399Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "containerId": "",
+      "sortNum": 10000,
+      "name": "auth",
+      "_id": "2ba1907a-5474-43a3-bb99-80390d058290",
+      "created": "2022-03-23T06:34:32.158Z"
+    },
+    {
+      "containerId": "",
+      "sortNum": 20000,
+      "name": "users",
+      "_id": "8d0d6155-10b5-4965-b009-4483408e17cf",
+      "created": "2022-03-23T06:35:08.611Z"
+    },
+    {
+      "containerId": "",
+      "sortNum": 30000,
+      "name": "cart",
+      "_id": "d0390a03-a2e9-403e-8f3f-08d01326e4a1",
+      "created": "2022-03-23T06:35:49.803Z"
+    },
+    {
+      "containerId": "",
+      "sortNum": 40000,
+      "name": "products",
+      "_id": "88b16387-6ca1-4779-84f7-a2d7d7f0790b",
+      "created": "2022-03-23T06:36:08.666Z"
+    },
+    {
+      "containerId": "",
+      "sortNum": 50000,
+      "name": "orders",
+      "_id": "33ac7024-475a-4318-9bf0-77e123c414c2",
+      "created": "2022-03-23T07:07:00.250Z"
+    }
+  ],
+  "requests": [
+    {
+      "containerId": "2ba1907a-5474-43a3-bb99-80390d058290",
+      "sortNum": 10000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": " REGISTER_NEW_USER",
+      "url": "{{BASE_URL}}/api/auth/register",
+      "method": "POST",
+      "modified": "2022-03-23T06:47:14.743Z",
+      "created": "2022-03-22T18:04:14.111Z",
+      "_id": "4360cbb7-bd9f-4fe8-9584-8cb452f6e235",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"username\" : \"Sample Singh\",\n    \"email\" : \"sample@gmail.com\",\n    \"password\" : \"sample\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "8d0d6155-10b5-4965-b009-4483408e17cf",
+      "sortNum": 10000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "GET_ALL_USERS",
+      "url": "{{BASE_URL}}/api/users",
+      "method": "GET",
+      "modified": "2022-03-23T06:35:12.866Z",
+      "created": "2022-03-22T18:25:33.132Z",
+      "_id": "a5ffb73e-46c5-4a6e-91ca-d39bed4f10ad",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "88b16387-6ca1-4779-84f7-a2d7d7f0790b",
+      "sortNum": 10000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "ADD_NEW_PRODUCT",
+      "url": "{{BASE_URL}}/api/products",
+      "method": "POST",
+      "modified": "2022-03-23T06:36:11.079Z",
+      "created": "2022-03-23T06:18:24.816Z",
+      "_id": "c9a34d81-2f07-4792-a3c8-a5768226d0ae",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"title\" : \"Fourth Product\",\n    \"desc\" : \"THis is a sample product\",\n    \"img\" : \"product image URL\",\n    \"categories\" : [\"dress\",\"woman\"],\n    \"size\" : \"M\",\n    \"color\" : \"pink\",\n    \"price\" : 500\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "d0390a03-a2e9-403e-8f3f-08d01326e4a1",
+      "sortNum": 10000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "CREATE_CART",
+      "url": "{{BASE_URL}}/api/carts",
+      "method": "POST",
+      "modified": "2022-03-23T06:47:45.153Z",
+      "created": "2022-03-23T06:13:04.070Z",
+      "_id": "f0b0212c-57e9-40bc-aa37-f5a9afeb1974",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"userId\" : \"623ac2723c4fd5420edb64f5\",\n    \"products\" : [{\n        \"productId\" : \"623abd473c4fd5420edb64dc\"\n    }]\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "2ba1907a-5474-43a3-bb99-80390d058290",
+      "sortNum": 20000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "USER_LOGIN",
+      "url": "{{BASE_URL}}/api/auth/login",
+      "method": "POST",
+      "modified": "2022-03-23T06:34:44.580Z",
+      "created": "2022-03-22T18:12:43.762Z",
+      "_id": "2427bfbc-6aae-47ad-b5d2-82e0191e8a76",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"username\" : \"rohitsingh2k\",\n    \"password\" : \"Test@123\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "8d0d6155-10b5-4965-b009-4483408e17cf",
+      "sortNum": 20000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "GET_USER_BY_ID",
+      "url": "{{BASE_URL}}/api/users/find/6239f1d65dbe84429032ee5e",
+      "method": "GET",
+      "modified": "2022-03-23T06:35:14.390Z",
+      "created": "2022-03-22T18:32:38.405Z",
+      "_id": "3f8d02e9-c656-4e9f-9f8a-2e50805aec16",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "88b16387-6ca1-4779-84f7-a2d7d7f0790b",
+      "sortNum": 20000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "GET_ALL_PRODUCTS",
+      "url": "{{BASE_URL}}/api/products",
+      "method": "GET",
+      "modified": "2022-03-23T06:36:12.286Z",
+      "created": "2022-03-23T06:23:27.391Z",
+      "_id": "831b968e-0e00-4cb6-99f3-6f87ad74dc60",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "88b16387-6ca1-4779-84f7-a2d7d7f0790b",
+      "sortNum": 30000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "UPDATE_PRODUCT_BY_ID",
+      "url": "{{BASE_URL}}/api/products/623abd473c4fd5420edb64dc",
+      "method": "PUT",
+      "modified": "2022-03-23T06:36:13.383Z",
+      "created": "2022-03-23T06:25:50.705Z",
+      "_id": "6ae9bcb8-fd6b-4d20-ba40-bdde87e33489",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"title\" : \"Second Product modified\",\n    \"desc\" : \"THis is a sample product\",\n    \"img\" : \"product image URL modified\",\n    \"categories\" : [\"tshirt\",\"girl\"],\n    \"size\" : \"M\",\n    \"color\" : \"pink\",\n    \"price\" : 1769\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "8d0d6155-10b5-4965-b009-4483408e17cf",
+      "sortNum": 30000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "DELETE_USER_BY_ID",
+      "url": "{{BASE_URL}}/api/users/6239f1d65dbe84429032ee5f",
+      "method": "DELETE",
+      "modified": "2022-03-23T06:35:18.178Z",
+      "created": "2022-03-22T18:38:18.789Z",
+      "_id": "75c8db41-9280-4102-bbd0-dcf54eeb318b",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "88b16387-6ca1-4779-84f7-a2d7d7f0790b",
+      "sortNum": 40000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "DELETE_PRODUCT_BY_ID",
+      "url": "{{BASE_URL}}/api/products/623abe4b3c4fd5420edb64e4",
+      "method": "DELETE",
+      "modified": "2022-03-23T06:36:14.492Z",
+      "created": "2022-03-23T06:30:05.814Z",
+      "_id": "3b47dbe7-89fb-45e7-81cc-9434950db756",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "8d0d6155-10b5-4965-b009-4483408e17cf",
+      "sortNum": 40000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "UPDATE_USER_BY_ID",
+      "url": "{{BASE_URL}}/api/users/623a116fd13cd1c6fca9dd80",
+      "method": "PUT",
+      "modified": "2022-03-23T06:35:20.769Z",
+      "created": "2022-03-22T18:41:39.490Z",
+      "_id": "941b80d4-2132-49bd-bc2e-2c4cd69f0cae",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"username\" : \"Anuj Singh\",\n    \"email\" : \"anuj0348950@gmail.com\",\n    \"password\" : \"T\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "88b16387-6ca1-4779-84f7-a2d7d7f0790b",
+      "sortNum": 50000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "FIND_PRODUCT_BY_ID",
+      "url": "{{BASE_URL}}/api/products/find/623abd473c4fd5420edb64dc",
+      "method": "GET",
+      "modified": "2022-03-23T06:36:15.661Z",
+      "created": "2022-03-23T06:32:09.649Z",
+      "_id": "10eb9b28-7dd5-4fd5-8d0d-6e72bd03d973",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "8d0d6155-10b5-4965-b009-4483408e17cf",
+      "sortNum": 50000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "USER_STATUS",
+      "url": "{{BASE_URL}}/api/users/stats",
+      "method": "GET",
+      "modified": "2022-03-23T06:35:24.003Z",
+      "created": "2022-03-22T18:48:31.622Z",
+      "_id": "301ff521-b7ce-44b7-af08-ecf6510a53df",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "d0390a03-a2e9-403e-8f3f-08d01326e4a1",
+      "sortNum": 140000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "UPDATE_CART_BY_ID",
+      "url": "{{BASE_URL}}/api/carts/623ac1463c4fd5420edb64f0",
+      "method": "PUT",
+      "modified": "2022-03-23T06:46:13.507Z",
+      "created": "2022-03-23T06:43:24.218Z",
+      "_id": "f8a4a8c7-cd57-422a-b139-a573a7cb788f",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"userId\" : \"623a116fd13cd1c6fca9dd80\",\n    \"products\" : [{\n        \"productId\" : \"623abd473c4fd5420edb64dc\",\n        \"quantity\" : 4\n    }]\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "d0390a03-a2e9-403e-8f3f-08d01326e4a1",
+      "sortNum": 150000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "GET_ALL_CARTS",
+      "url": "{{BASE_URL}}/api/carts",
+      "method": "GET",
+      "modified": "2022-03-23T06:49:57.558Z",
+      "created": "2022-03-23T06:48:41.341Z",
+      "_id": "ac9c8de9-f099-4f4f-9eac-f9a804c88f45",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "d0390a03-a2e9-403e-8f3f-08d01326e4a1",
+      "sortNum": 160000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "FIND_CART_BY_USERID",
+      "url": "{{BASE_URL}}/api/carts/find/623ac2723c4fd5420edb64f5",
+      "method": "GET",
+      "modified": "2022-03-23T06:53:14.062Z",
+      "created": "2022-03-23T06:50:53.226Z",
+      "_id": "bfcb86b1-cdbd-4e4b-be67-844dfeeb2a6a",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "d0390a03-a2e9-403e-8f3f-08d01326e4a1",
+      "sortNum": 170000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "DELETE_CART",
+      "url": "{{BASE_URL}}/api/carts/623ac2903c4fd5420edb64f7",
+      "method": "DELETE",
+      "modified": "2022-03-23T06:55:27.486Z",
+      "created": "2022-03-23T06:54:34.295Z",
+      "_id": "b3653569-2556-4f3d-9934-a86a9c6e5239",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "33ac7024-475a-4318-9bf0-77e123c414c2",
+      "sortNum": 180000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "GET_ALL_ORDERS",
+      "url": "{{BASE_URL}}/api/orders",
+      "method": "GET",
+      "modified": "2022-03-23T07:20:42.025Z",
+      "created": "2022-03-23T07:19:23.014Z",
+      "_id": "b4197b06-340f-4242-b358-567b958b90ac",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "33ac7024-475a-4318-9bf0-77e123c414c2",
+      "sortNum": 190000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "CREATE_ORDERS",
+      "url": "{{BASE_URL}}/api/orders",
+      "method": "POST",
+      "modified": "2022-03-23T07:25:50.836Z",
+      "created": "2022-03-23T07:21:11.612Z",
+      "_id": "2542edb5-e284-488a-8392-9706d377c0eb",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"userId\" : \"623a116fd13cd1c6fca9dd80\",\n    \"products\" : [{\n        \"productId\" : \"623abd473c4fd5420edb64dc\"\n    }],\n    \"amount\": 1500,\n    \"address\": \"Some address\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "33ac7024-475a-4318-9bf0-77e123c414c2",
+      "sortNum": 200000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "UPDATE_ORDERS_BY_ID",
+      "url": "{{BASE_URL}}/api/orders/623acb333c4fd5420edb6501",
+      "method": "PUT",
+      "modified": "2022-03-23T07:28:32.175Z",
+      "created": "2022-03-23T07:26:45.153Z",
+      "_id": "73ae6000-0b40-4b6a-9f59-64e2e061aee9",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"userId\" : \"623a116fd13cd1c6fca9dd80\",\n    \"products\" : [{\n        \"productId\" : \"623abd473c4fd5420edb64dc\"\n    }],\n    \"amount\": 1500,\n    \"address\": \"Some address\",\n    \"status\" : \"complete\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "33ac7024-475a-4318-9bf0-77e123c414c2",
+      "sortNum": 210000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "FIND_ORDER_BY_USERID",
+      "url": "{{BASE_URL}}/api/orders/find/623a116fd13cd1c6fca9dd80",
+      "method": "GET",
+      "modified": "2022-03-23T07:30:53.735Z",
+      "created": "2022-03-23T07:29:33.051Z",
+      "_id": "090ebc77-e4ea-43f2-a657-6838dc602a69",
+      "params": [],
+      "tests": []
+    },
+    {
+      "containerId": "33ac7024-475a-4318-9bf0-77e123c414c2",
+      "sortNum": 220000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        {
+          "name": "token",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0Nzk3MzQ4MCwiZXhwIjoxNjQ4MDU5ODgwfQ.uGxBdUHFEOtJyuGe0icujLxkvABBBT8G_NQSuLyXNok"
+        }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "DELETE_ORDER_BY_ID",
+      "url": "{{BASE_URL}}/api/orders/623acb7e3c4fd5420edb6508",
+      "method": "DELETE",
+      "modified": "2022-03-23T07:33:05.088Z",
+      "created": "2022-03-23T07:31:48.913Z",
+      "_id": "eb4e5b01-d838-4731-9392-173a4148508d",
+      "params": [],
+      "tests": []
+    }
+  ],
+  "settings": {
+    "headers": [],
+    "tests": [],
+    "envId": "ce51c4c9-c5d0-4c10-a75e-bd0ac284ffc6"
+  }
+}
