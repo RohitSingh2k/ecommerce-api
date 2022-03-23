@@ -14,11 +14,11 @@ To use this project follow these steps : 👇
     ```bash
     cd ecommerce-api
     ```
-- Add an `.env` file into this folder. and add the details provided 👇.
+- Add an `.env` file into this folder and add the details provided 👇.
     ```bash
     MONGO_URL=<add your mongodb uri here>
-    PASS_SEC=<add any string here as a password security key without double qoutes(\")>
-    JWT_SEC=<add any string here without double qoutes(\")>
+    PASS_SEC=<add any string here as a password security key without double qoutes(")>
+    JWT_SEC=<add any string here without double qoutes(")>
     ```
 - Check for `npm` and `node` installation in your syatem.
     ```bash
