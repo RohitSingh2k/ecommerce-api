@@ -38,18 +38,18 @@ To use this project follow these steps : 👇
     yarn start
     ```
 - Wait for the DB connection.
-    ```
-    yarn run v1.22.17
-    $ nodemon index.js
-    [nodemon] 2.0.15
-    [nodemon] to restart at any time, enter `rs`
-    [nodemon] watching path(s): *.*
-    [nodemon] watching extensions: js,mjs,json
-    [nodemon] starting `node index.js`
-    Backend server is running!
-    DB Connection Successfull!
+  
+>    yarn run v1.22.17
+>    $ nodemon index.js
+>    [nodemon] 2.0.15
+>    [nodemon] to restart at any time, enter `rs`
+>    [nodemon] watching path(s): *.*
+>    [nodemon] watching extensions: js,mjs,json
+>    [nodemon] starting `node index.js`
+>    Backend server is running!
+>    DB Connection Successfull!
 
-    ```
+
 🤩 you are all set you API is up and running 👍🏻
 
 
