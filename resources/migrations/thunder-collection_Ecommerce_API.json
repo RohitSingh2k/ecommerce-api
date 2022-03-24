@@ -1,7 +1,7 @@
 {
   "client": "Thunder Client",
   "collectionName": "Ecommerce_API",
-  "dateExported": "2022-03-24T12:40:48.198Z",
+  "dateExported": "2022-03-24T17:57:52.213Z",
   "version": "1.1",
   "folders": [
     {
@@ -38,6 +38,13 @@
       "name": "orders",
       "_id": "33ac7024-475a-4318-9bf0-77e123c414c2",
       "created": "2022-03-23T07:07:00.250Z"
+    },
+    {
+      "containerId": "",
+      "sortNum": 60000,
+      "name": "files",
+      "_id": "68fe37c7-0d8b-4575-be4a-f25b11be2453",
+      "created": "2022-03-24T17:46:42.132Z"
     }
   ],
   "requests": [
@@ -63,6 +70,35 @@
         "type": "json",
         "raw": "{\n    \"username\" : \"Sample Singh\",\n    \"email\" : \"sample@gmail.com\",\n    \"password\" : \"sample\"\n}",
         "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "68fe37c7-0d8b-4575-be4a-f25b11be2453",
+      "sortNum": 10000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        },
+        { "name": "token", "value": "{{TOKEN}}" }
+      ],
+      "colId": "51f452d6-a3cc-4c88-a0c5-ee9c8b7a2b73",
+      "name": "FILE_UPLOAD",
+      "url": "{{BASE_URL}}/api/upload",
+      "method": "POST",
+      "modified": "2022-03-24T17:46:44.692Z",
+      "created": "2022-03-24T16:16:29.353Z",
+      "_id": "490a4dc4-9822-4252-8a5e-778f9a5735db",
+      "params": [],
+      "body": {
+        "type": "formdata",
+        "raw": "",
+        "form": [],
+        "files": [
+          { "name": "photo", "value": "/home/rohit/Downloads/wallpaer.webp" }
+        ]
       },
       "tests": []
     },

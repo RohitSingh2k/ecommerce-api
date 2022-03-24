@@ -1,5 +1,5 @@
 const cors = require("cors");
-const path = require('path');
+const path = require("path");
 const dotenv = require("dotenv");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -11,6 +11,7 @@ const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
 const stripeRoute = require("./routes/stripe");
 const productRoute = require("./routes/product");
+const uploadFile = require("./routes/imageUpload");
 
 const app = express();
 
@@ -25,20 +26,22 @@ mongoose
     console.log(err);
   });
 
-
 // Using middleware here.
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, "public")));
 
 // initialising routes of the APIs.
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
+app.use("/api/upload", uploadFile);
 app.use("/api/checkout", stripeRoute);
 app.use("/api/products", productRoute);
 
 app.listen(process.env.PORT || 5000, () => {
-  console.log("Backend server is running!");
+  console.log(
+    `Backend server is running on port : ${process.env.PORT || 5000}`
+  );
 });
