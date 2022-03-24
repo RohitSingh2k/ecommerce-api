@@ -1,7 +1,13 @@
 {
   "client": "Thunder Client",
   "environmentName": "LOCAL",
-  "dateExported": "2022-03-23T07:39:20.116Z",
+  "dateExported": "2022-03-24T12:40:36.080Z",
   "version": "1.0",
-  "variables": [{ "name": "BASE_URL", "value": "http://localhost:5000" }]
+  "variables": [
+    { "name": "BASE_URL", "value": "http://localhost:5000" },
+    {
+      "name": "TOKEN",
+      "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzlmMGM3NWRiZTg0NDI5MDMyZWU1OSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0ODEyNTI2MiwiZXhwIjoxNjQ4MjExNjYyfQ.cRQGOSdWDJk3_h6_Opban37SMPDxImk2q5y4m4fGU0U"
+    }
+  ]
 }
