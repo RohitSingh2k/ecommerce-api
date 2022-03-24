@@ -6,8 +6,8 @@
   "repository": "https://github.com/RohitSingh2k/ecommerce-api.git",
   "author": "Rohit Singh <singh.rohitsingh2k@gmail.com>",
   "license": "MIT",
-  "scripts" :  {
-    "start" : "nodemon index.js"
+  "scripts": {
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.5",
+    "multer": "^1.4.4",
     "nodemon": "^2.0.12",
     "stripe": "^8.174.0"
   }
