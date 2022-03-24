@@ -34,10 +34,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 // initialising routes of the APIs.
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
-app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
+app.use("/api/products", productRoute);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("Backend server is running!");
