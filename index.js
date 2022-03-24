@@ -40,8 +40,8 @@ app.use("/api/upload", uploadFile);
 app.use("/api/checkout", stripeRoute);
 app.use("/api/products", productRoute);
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log(
-    `Backend server is running on port : ${process.env.PORT || 5000}`
-  );
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`Backend server is running on port : ${port}`);
 });
